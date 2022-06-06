@@ -94,13 +94,19 @@ function dataProcessing(data) {
   observer.observe(gallery.lastElementChild);
 }
 
+if (!data.totalHits) {
+  Notify.failure("Sorry, there are no images matching your search query. Please try again.")
+}
 
+else {
+  onloadMore(data);
+}
 
 const loadMoreBtn = document.querySelector(".load-more");
 let currentItem = 6;
 
-loadMoreBtn.onclick = () =>{
-   let boxes = document.querySelector('.photo-card .info');
+onloadMore.onclick = () =>{
+   let boxes = document.querySelector('.photo-card');
    for (const i = currentItem; i < currentItem + 6; i++){
       boxes[i].style.display = 'inline-block';
    }
