@@ -1,7 +1,7 @@
 import SimpleLightbox from "simplelightbox";
 import { Notify } from 'notiflix';
 
-// import "simplelightbox/dist/simple-lightbox.min.css";
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 
 import ServiceAPI from './service-api';
@@ -84,7 +84,9 @@ function dataProcessing(data) {
 
   if (loadService.pageNumber === 2) {
     Notify.info(`Hooray! We found ${data.data.totalHits} images.`);
-  } else {
+  } 
+  
+  else {
     const { height: cardHeight } = gallery.firstElementChild.getBoundingClientRect();
     window.scrollBy({
       top: cardHeight * 2 + 120,
@@ -96,18 +98,18 @@ function dataProcessing(data) {
 
 
 
-// const loadMoreBtn = document.querySelector(".load-more");
-// let currentItem = 6;
+const loadMoreBtn = document.querySelector(".load-more");
+let currentItem = 6;
 
-// onloadMore.onclick = () =>{
-//    let boxes = document.querySelector('.photo-card');
-//    for (const i = currentItem; i < currentItem + 6; i++){
-//       boxes[i].style.display = 'inline-block';
-//    }
-//    currentItem += 6;
+onloadMore.onclick = () =>{
+   let boxes = document.querySelector('.photo-card');
+   for (const i = currentItem; i < currentItem + 6; i++){
+      boxes[i].style.display = 'inline-block';
+   }
+   currentItem += 6;
 
-//    if(currentItem >= boxes.length){
-//       loadMoreBtn.style.display = 'none';
-//    }
-// }
+   if(currentItem >= boxes.length){
+      loadMoreBtn.style.display = 'none';
+   }
+}
 
