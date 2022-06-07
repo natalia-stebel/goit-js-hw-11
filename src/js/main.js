@@ -94,26 +94,26 @@ function dataProcessing(data) {
   observer.observe(gallery.lastElementChild);
 }
 
-if (!data.totalHits) {
-  Notify.failure("Sorry, there are no images matching your search query. Please try again.")
-}
+// if (!data.totalHits) {
+//   Notify.failure("Sorry, there are no images matching your search query. Please try again.")
+// }
 
-else {
-  onloadMore(data);
-}
+// else {
+//   onloadMore(data);
+// }
 
-const loadMoreBtn = document.querySelector(".load-more");
-let currentItem = 6;
+// const loadMoreBtn = document.querySelector(".load-more");
+// let currentItem = 6;
 
-onloadMore.onclick = () =>{
-   let boxes = document.querySelector('.photo-card');
-   for (const i = currentItem; i < currentItem + 6; i++){
-      boxes[i].style.display = 'inline-block';
-   }
-   currentItem += 6;
+// onloadMore.onclick = () =>{
+//    let boxes = document.querySelector('.photo-card');
+//    for (const i = currentItem; i < currentItem + 6; i++){
+//       boxes[i].style.display = 'inline-block';
+//    }
+//    currentItem += 6;
 
-   if(currentItem >= boxes.length){
-      loadMoreBtn.style.display = 'none';
-   }
-}
+//    if(currentItem >= boxes.length){
+//       loadMoreBtn.style.display = 'none';
+//    }
+// }
 
