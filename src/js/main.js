@@ -1,7 +1,8 @@
 import SimpleLightbox from "simplelightbox";
 import { Notify } from 'notiflix';
 
-// import "simplelightbox/dist/simple-lightbox.min.css";
+
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 
 import ServiceAPI from './service-api';
