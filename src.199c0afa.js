@@ -76,4 +76,4 @@ module.exports=require("./lib/axios");
 },{"simplelightbox":"yx6k","notiflix":"cwzQ","./service-api":"csE3","./markup":"tW6H"}],"Focm":[function(require,module,exports) {
 "use strict";require("./js/main");
 },{"./js/main":"d6sW"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11/src.9e801196.js.map
+//# sourceMappingURL=/goit-js-hw-11/src.199c0afa.js.map
