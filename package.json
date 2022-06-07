@@ -19,17 +19,19 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
+    "cssnano": "^5.1.11",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
+    "postcss": "^8.4.14",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "lodash.debounce": "^4.0.8",
     "notiflix": "^3.2.5",
-    "throttle-debounce": "^5.0.0",
-    "axios": "^0.24.0",
-    "simplelightbox": "^2.10.1"
+    "simplelightbox": "^2.10.1",
+    "throttle-debounce": "^5.0.0"
   }
 }
