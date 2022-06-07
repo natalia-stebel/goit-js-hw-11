@@ -1,7 +1,7 @@
 import SimpleLightbox from "simplelightbox";
 import { Notify } from 'notiflix';
 
-import "simplelightbox/dist/simple-lightbox.min.css";
+// import "simplelightbox/dist/simple-lightbox.min.css";
 
 
 import ServiceAPI from './service-api';
@@ -94,13 +94,7 @@ function dataProcessing(data) {
   observer.observe(gallery.lastElementChild);
 }
 
-// if (!data.totalHits) {
-//   Notify.failure("Sorry, there are no images matching your search query. Please try again.")
-// }
 
-// else {
-//   onloadMore(data);
-// }
 
 // const loadMoreBtn = document.querySelector(".load-more");
 // let currentItem = 6;
